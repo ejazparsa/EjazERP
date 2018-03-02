@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for item in companys %}
+    <p> {{ item.company_name }} </p>
+    <P> {{ item.location }} </P>
+    <p> {{ item.description }}</p>
+    {% endfor %}
+{% endblock %}

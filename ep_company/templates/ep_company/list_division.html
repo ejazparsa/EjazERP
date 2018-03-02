@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for item in divisions %}
+    <div>
+        <h2><a href=" {% url 'division_detail' pk=item.pk %} ">{{ item.name_division }}</a></h2>
+    <P> {{ item.company }} </P>
+    <p> {{ item.description }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
